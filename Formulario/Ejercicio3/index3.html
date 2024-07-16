@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Compra</title>
+    <link rel="stylesheet" href="estilos3.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Susana Horia restaurante</h2>
+        <form id="purchaseForm">
+            <label for="principal">Plato Fuerte:</label>
+            <select id="principal" name="principal" required>
+                <option value="">Seleccione...</option>
+                <option value="pollo">Pollo - $10</option>
+                <option value="res">Res - $15</option>
+                <option value="pescado">Pescado - $12</option>
+            </select>
+
+            <label for="postre">Postre:</label>
+            <select id="postre" name="postre" required>
+                <option value="">Seleccione...</option>
+                <option value="helado">Helado - $3</option>
+                <option value="pastel">Pastel - $5</option>
+                <option value="fruta">Fruta - $2</option>
+            </select>
+
+            <button type="button" onclick="calculoTotal()">Comprar</button>
+        </form>
+
+        <h2>Costo Total:</h2>
+        <p id="costototal"></p>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>
